@@ -6,7 +6,6 @@ import asyncio
 def connectToHost():
     try:
         parameters = pika.ConnectionParameters(host="localhost")
-        # parameters = pika.URLParameters(url='amqps://unbvroga:3TX16oOFhyAVGofHs4KeO09kW2yc6IFK@fly.rmq.cloudamqp.com/unbvroga')
         return pika.BlockingConnection(parameters)
     except e: print('Connect to localhost encountered a problem')
 
