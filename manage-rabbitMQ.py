@@ -16,7 +16,7 @@ import pika
 def connectToHost():
     try:
         parameters = pika.ConnectionParameters(host="localhost")
-        # parameters = pika.URLParameters(url='amqps://unbvroga:3TX16oOFhyAVGofHs4KeO09kW2yc6IFK@fly.rmq.cloudamqp.com/unbvroga')
+        # parameters = pika.URLParameters(url='...')
         return pika.BlockingConnection(parameters)
     except Exception as  e: print('Error:' + e)
 
